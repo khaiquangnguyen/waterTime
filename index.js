@@ -23,7 +23,7 @@ $(document).ready(function () {
 		else {
 			name_list = data.Item.members;
 			draw_cups(name_list);
-			setInterval(live_update,1000);
+			setInterval(live_update,250);
 		}
 	});
 
