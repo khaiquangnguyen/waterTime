@@ -23,6 +23,7 @@ $(document).ready(function () {
 		else {
 			name_list = data.Item.members;
 			draw_cups(name_list);
+			setInterval(live_update,1000);
 		}
 	});
 
@@ -46,7 +47,7 @@ $(document).ready(function () {
 			else {
 				names = data.Attributes.members
 				$.each(names, function (k, v) {
-					$("#" + k + " .water").css("height", Math.min(10+v*30,270));
+					$("#" + k + " .water").css("height", Math.min(5 + v * 30, 270));
 				});
 			}
 		});
@@ -72,7 +73,19 @@ $(document).ready(function () {
 				names = data.Attributes.members
 				console.log(names);
 				$.each(names, function (k, v) {
-					$("#" + k + " .water").css("height", Math.min(10+v*30,270));
+					$("#" + k + " .water").css("height", Math.min(5 + v * 30, 270));
+				});
+			}
+		});
+	}
+
+	function live_update() {
+		docClient.get(item_params, function (err, data) {
+			if (err) console.log(err, err.stack); // an error occurred
+			else {
+				names = data.Item.members;
+				$.each(names, function (k, v) {
+					$("#" + k + " .water").css("height", Math.min(5 + v * 30, 270));
 				});
 			}
 		});
@@ -82,14 +95,14 @@ $(document).ready(function () {
 		left = 90;
 		$.each(names, function (k, v) {
 			var input = "<input class='input' id = '" + k + "' type='number' placeholder='work hour'>"
-			
+
 			var $newDiv = $("<div/>") // creates a div element
 				.attr("id", k) // adds the id
 				.addClass("cup") // add a class
 				.html("<div class = \"water\"></div> <div class = \"name\">" + input + "<h1>" + k + "<h1></div>");
 			$('body').append($newDiv)
 			$("#" + k).css("left", left);
-			$("#" + k + " .water").css("height", Math.min(10+v*30,270));
+			$("#" + k + " .water").css("height", Math.min(5 + v * 30, 270));
 			left += ($('body').width() - 180 * (Object.keys(names).length + 1)) / (Object.keys(names).length - 1) + 180;
 			$("#" + k + " .name .input").keypress(function (event) {
 				var keycode = (event.keyCode ? event.keyCode : event.which);
