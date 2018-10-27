@@ -1,6 +1,6 @@
 :root {
   --cup-width: 180px;
-  --cup-height: 400px;
+  --cup-height: 320px;
   --cup-bottom: 20%;
   --water-color: lightblue;
 
@@ -49,7 +49,7 @@ body {
 
 .name {
   position: absolute;
-  bottom: 120%;
+  bottom: 110%;
   text-align: center;
   width: var(--cup-width);
   height: 40px;
