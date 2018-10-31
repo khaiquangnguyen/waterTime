@@ -3,6 +3,7 @@ let CUP_HEIGHT = 310;
 let MIN_WATER_HEIGHT = 10;
 let WATER_PER_HOUR_RELAX = 15;
 let WATER_PER_PRODUCTIVITY = 25;
+let CUP_WIDTH = 250;
 
 $(document).ready(function () {
 	// Amazon access
@@ -114,7 +115,10 @@ $(document).ready(function () {
 	}
 
 	function draw_cups(names) {
-		left = 90;
+		left = $('body').width() / 24
+		distance = 2 * left
+		CUP_WIDTH = 4 * left
+		console.log(CUP_WIDTH);
 		$.each(names, function (k, v) {
 			var input = "<input class='productive_input' id = '" + k + "' type='number' placeholder='productive hrs'> <input class='relax_input' id = '" + k + "' type='number' placeholder='happy hrs'>"
 			var $newDiv = $("<div/>") // creates a div element
@@ -123,7 +127,11 @@ $(document).ready(function () {
 				.html("<div class = 'productive_cup'> <div class = 'productive_water'></div> </div> <div class = 'relax_cup'> <div class = \"relax_water\"></div> </div>" + input + "<div class = \"name\">" + "<h3>" + k + "<h3></div>");
 			$('body').append($newDiv)
 			$("#" + k).css("left", left);
-			left += ($('body').width() - 300 * (Object.keys(names).length + 1)) / (Object.keys(names).length - 1) + 300;
+			// left += ($('body').width() - CUP_WIDTH * (Object.keys(names).length + 1)) / (Object.keys(names).length - 1) + CUP_WIDTH;
+			left += 	CUP_WIDTH + distance;
+			$("#" + k).css("width", CUP_WIDTH);
+			$(".name").css("width", CUP_WIDTH);
+			
 			$("#" + k + " .productive_input").keypress(function (event) {
 				var keycode = (event.keyCode ? event.keyCode : event.which);
 				if (keycode == '13') {

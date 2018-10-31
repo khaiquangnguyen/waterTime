@@ -1,13 +1,12 @@
 :root {
-  --cup-width: 300px;
   --cup-height: 320px;
   --cup-bottom: 15%;
-  --text-color:  #EBF3F6;
-  --background-color: #0A222C;
-  --productive-water-color: #5F9FB9;
-  --relax-water-color: #FF1654;
-  --cup-border-color: #217092;
-  --sub-text-color: #217092;
+  --text-color:  #120F14;
+  --background-color: #FDFDFF;
+  --productive-water-color: #083D77;
+  --relax-water-color: #DA4167;
+  --cup-border-color: #120F14;
+  --sub-text-color: #716D73;
 
 }
 
@@ -26,7 +25,7 @@ h2{
   text-align: center;
 }
 h3{
-  font: 100 1.2em/1 'Alice', serif;
+  font: 600 2em/1 'Alice', serif;
   font-weight: lighter;
   color: var(--text-color);
   text-align: center;
@@ -54,7 +53,7 @@ body {
   position: absolute;
   width: 45%;
   height: var(--cup-height);
-  border: 5px solid var(--cup-border-color);
+  border: 4px solid var(--cup-border-color);
   border-top: 5px solid transparent;
   border-radius: 15px;
   border-top-left-radius: 5px;
@@ -66,7 +65,7 @@ body {
   position: absolute;
   width: 45%;
   height: var(--cup-height);
-  border: 5px solid var(--cup-border-color);
+  border: 4px solid var(--cup-border-color);
   border-top: 5px solid transparent;
   border-radius: 15px;
   border-top-left-radius: 5px;
@@ -106,15 +105,13 @@ body {
 
 .name {
   position: absolute;
-  bottom: 145%;
+  bottom: 136%;
   text-align: center;
-  width: var(--cup-width);
-  height: 40px;
+  height: 10%;
   border-radius: 15px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   transition: height 1s ease-in-out;
-  font: 600 1.8em  'Alice', serif;
   color: var(--text-color);
   text-transform: capitalize;
   opacity: 0.8;
@@ -123,10 +120,10 @@ body {
 input{
   position: absolute;
   left: 0%;
-  bottom: 115%;
+  bottom: 108%;
   text-align: center;
   width: 45%;
-  height: 40px;
+  height: 10%;
   border-radius: 8px;  
   border: 2px solid var(--cup-border-color);
   font: 300 1em  'Alice', serif;
