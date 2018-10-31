@@ -1,13 +1,13 @@
 :root {
   --cup-width: 300px;
   --cup-height: 320px;
-  --cup-bottom: 20%;
-  --text-color:  #f7f6f0;
-  --background-color: #362c36;
-  --productive-water-color: #a7cbd5;
-  --relax-water-color: #4d4c59;
-  --cup-border-color: #f7f6f0;
-  --sub-text-color: #71777d;
+  --cup-bottom: 15%;
+  --text-color:  #EBF3F6;
+  --background-color: #0A222C;
+  --productive-water-color: #5F9FB9;
+  --relax-water-color: #FF1654;
+  --cup-border-color: #217092;
+  --sub-text-color: #217092;
 
 }
 
@@ -16,6 +16,7 @@ h1{
   font: 100 4em/1 'Sacramento', cursive;
   color: var(--text-color);
   text-align: center;
+  margin-top: 5%;
 }
 
 h2{
@@ -46,8 +47,7 @@ body {
   bottom: var(--cup-bottom);
   width: var(--cup-width);
   height: var(--cup-height);
-  bottom: 15%;
- 
+
 }
 
 .productive_cup {
@@ -153,4 +153,3 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
- 
