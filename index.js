@@ -36,7 +36,7 @@ $(document).ready(function () {
 				start_time = moment(date).format('MMMM Do YYYY');
 				end_time = moment(date).add(14, 'days')
 				remaining_time = end_time.diff(moment(), "days")
-				$("#timestamp").html("<h2> Today is " + moment().format('MMMM Do YYYY') + ". There are " + remaining_time + " days left until we can rest and celebrate! <h2>");
+				$("#timestamp").html("<h2> Today is " + moment().format('MMMM Do YYYY') + ". There are <b>" + remaining_time + " days </b> left until we can rest and celebrate! <h2>");
 				$("#period").html("<h2>Hey guys! Our journey begins since " + start_time + ". <h2>");
 			});
 		}

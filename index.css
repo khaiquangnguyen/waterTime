@@ -12,14 +12,14 @@
 
 
 h1{
-  font: 100 4em/1 'Sacramento', cursive;
+  font: 100 5em/1 'Sacramento', cursive;
   color: var(--text-color);
   text-align: center;
   margin-top: 5%;
 }
 
 h2{
-  font: 100 1.2em/1 'Alice', serif;
+  font: 100 1.3em/1 'Alice', serif;
   font-weight: lighter;
   color: var(--sub-text-color);
   text-align: center;
