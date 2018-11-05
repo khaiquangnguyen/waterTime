@@ -1,4 +1,4 @@
-let DATA_ENTRY_NAME = 'Oct22';
+let DATA_ENTRY_NAME = 'Nov4';
 let CUP_HEIGHT = 310;
 let MIN_WATER_HEIGHT = 10;
 let WATER_PER_HOUR_RELAX = 15;
@@ -128,10 +128,10 @@ $(document).ready(function () {
 			$('body').append($newDiv)
 			$("#" + k).css("left", left);
 			// left += ($('body').width() - CUP_WIDTH * (Object.keys(names).length + 1)) / (Object.keys(names).length - 1) + CUP_WIDTH;
-			left += 	CUP_WIDTH + distance;
+			left += CUP_WIDTH + distance;
 			$("#" + k).css("width", CUP_WIDTH);
 			$(".name").css("width", CUP_WIDTH);
-			
+
 			$("#" + k + " .productive_input").keypress(function (event) {
 				var keycode = (event.keyCode ? event.keyCode : event.which);
 				if (keycode == '13') {
