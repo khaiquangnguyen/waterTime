@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --cup-height: 320px;
   --cup-bottom: 5%;
   --text-color:  #120F14;
@@ -8,7 +8,20 @@
   --cup-border-color: #120F14;
   --sub-text-color: #716D73;
 
+} */
+
+:root {
+  --cup-height: 320px;
+  --cup-bottom: 5%;
+  --text-color:  #e6df44;
+  --background-color: #011a27;
+  --productive-water-color: #e6df44;
+  --relax-water-color: #f0810f;
+  --cup-border-color: #34675c;
+  --sub-text-color: #063852;
+
 }
+
 
 
 h1{
