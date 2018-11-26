@@ -1,8 +1,8 @@
 let DATA_ENTRY_NAME = 'Nov25';
-let CUP_HEIGHT = 310;
+let CUP_HEIGHT = 300;
 let MIN_WATER_HEIGHT = 10;
-let WATER_PER_HOUR_RELAX = 15;
-let WATER_PER_PRODUCTIVITY = 25;
+let WATER_PER_HOUR_RELAX = 10;
+let WATER_PER_PRODUCTIVITY = 20;
 let CUP_WIDTH = 250;
 
 $(document).ready(function () {

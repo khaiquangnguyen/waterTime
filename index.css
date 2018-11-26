@@ -11,7 +11,7 @@
 } */
 
 :root {
-  --cup-height: 320px;
+  --cup-height: 300px;
   --cup-bottom: 5%;
   --text-color:  #e6df44;
   --background-color: #011a27;
@@ -51,7 +51,7 @@ body {
 }
 
 #info{
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .cup_set {
